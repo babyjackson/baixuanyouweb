@@ -1,0 +1,283 @@
+
+.h-35{
+    height: 35px;
+}
+.h-80{
+    height: 80px;
+}
+
+.common-bg-1{
+    background: url(../images/common_problem_head_bg.jpg) no-repeat center;
+}
+.common-bg-2{
+    background: #eeeeee;
+}
+.common-problem-head-bg{
+    width: 100%;
+    min-width: 1200px;
+    height: 130px;
+    background-size: auto 100%;
+}
+.common-problem-head{
+    margin: 0 auto;
+    width: 1200px;
+    height: 130px;
+}
+.common-problem-head .text-left{
+    float: left;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 130px;
+    padding-right: 40px;
+}
+.common-problem-head .input-right{
+    float: left;
+    width: 760px;
+    height:130px;
+}
+.common-problem-head .input-right .input{
+    height: 50px;
+    border-radius: 5px;
+    background: #ffffff;
+    width: 760px;
+    overflow: hidden;
+}
+.common-problem-head .input-right .input input{
+    display: block;
+    float: left;
+    width: 650px;
+    height: 50px;
+    background: #ffffff;
+    outline: 0;
+    border: 0;
+    text-indent: 20px;
+}
+.common-problem-head .input-right .input a{
+    display: block;
+    width: 110px;
+    height: 50px;
+    float: right;
+    background: #09c084;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
+.common-problem-head .input-right .hot-search{
+    margin-top: 10px;
+    color: #ffffff;
+}
+.common-problem-head .input-right .hot-search span{
+    font-size: 14px;
+    line-height: 15px;
+    float: left;
+    opacity: 0.5;
+}
+.common-problem-head .input-right .hot-search a{
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0 15px;
+    border-left: 2px solid #ffffff;
+}
+.common-problem-head .input-right .hot-search a:nth-of-type(1){
+    border: 0;
+    padding: 0 15px 0 0;
+}
+
+.common-problem-con{
+    background: #f8f8f8;
+}
+
+.common-problem-con .common-nav{
+    height: 55px;
+    width: 100%;
+    min-width: 1200px;
+    border-bottom: 2px solid #eeeeee;
+}
+.common-problem-con .common-nav .switch-nav{
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+}
+.common-problem-con .common-nav .switch-nav li{
+    float: left;
+    margin-right: 40px;
+    line-height: 55px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+}
+.common-problem-con .common-nav .switch-nav li.active{
+    position: relative;
+    color: #09c084;
+}
+.common-problem-con .common-nav .switch-nav li.active i{
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #09c084;
+}
+
+.common-box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.problem-con{
+    float: left;
+    width: 875px;
+}
+.problem-con .item-con ul li{
+    height: 220px;
+    width: 875px;
+    background: #ffffff;
+    margin-top: 20px;
+}
+.problem-con .item-con ul li a{
+    display: block;
+}
+.problem-con .item-con ul li .title{
+    padding: 25px 30px 5px 30px;
+    line-height: 2;
+    font-size: 20px;
+    color: #333333;
+}
+.problem-con .item-con ul li .title span{
+    color: #09c084;
+}
+.problem-con .item-con ul li .text{
+    width: 800px;
+    height: 90px;
+    overflow: hidden;
+    color: #6e6e6e;
+    line-height: 28px;
+    padding: 0 30px;
+}
+.problem-con .item-con ul li .tips{
+    font-size: 14px;
+    color: #333333;
+    line-height: 28px;
+    padding: 10px 30px;
+}
+.problem-con .item-con ul li .tips .time{
+    float: right;
+    color: #adadad;
+}
+.load-more-a{
+    display:block;
+    margin-top: 20px;
+    height: 55px;
+    width: 875px;
+    background: #ffffff;
+    font-size: 16px;
+    color: #adadad;
+    text-align: center;
+    line-height: 55px;
+}
+.bread-nav{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    line-height: 70px;
+    font-size: 16px;
+    color: #909090;
+}
+.bread-nav a{
+    font-size: 16px;
+    color: #909090;
+    margin: 0 10px;
+}
+.maybe-atten-problem{
+    float: right;
+    width: 300px;
+    margin-top: 20px;
+}
+.maybe-atten-problem .title{
+    font-size: 20px;
+    color: #6b6b6b;
+}
+.maybe-atten-problem ul{
+    margin-top: 20px;
+    padding: 20px 15px;
+    width: 270px;
+    height: 260px;
+    background: #ffffff;
+}
+.maybe-atten-problem ul li a{
+    display: block;
+    font-size: 16px;
+    color: #5d5d5d;
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+}
+.common-problem-head .input-right .hot-search.color-1 a{
+    border-left: 2px solid #a9a9a9;
+}
+.common-problem-head .input-right .hot-search.color-1 a:nth-of-type(1){
+    border: 0;
+}
+.common-problem-head .input-right .hot-search.color-1{
+    color: #707070;
+}
+
+.detail-con{
+    padding: 40px 30px 50px 30px;
+    background: #ffffff;
+}
+.detail-con .title{
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.1;
+}
+.detail-con .title .time{
+    float: right;
+    color: #adadad;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.detail-con .content{
+    width: 750px;
+    padding: 25px 25px 60px 25px;
+    background: #f8f8f8;
+    margin-top: 30px;
+}
+.detail-con .content p{
+    font-size: 16px;
+    color: #414141;
+    line-height: 2;
+}
+
+.detail-con .share{
+    float: right;
+    padding: 50px 30px 0 30px;
+    height: 30px;
+}
+.detail-con .share span{
+    float: left;
+    font-size: 14px;
+    color: #adadad;
+    margin-top: 10px;
+}
+.detail-con .share a{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: 17px;
+    background-image: url(../images/b_icon.png);
+    background-repeat: no-repeat;
+}
+.detail-con .share a.weibo{
+    background-position: -262px -4px;
+}
+.detail-con .share a.qq{
+    background-position: -312px -4px;
+}
+.detail-con .share a.weixin{
+    background-position: -362px -4px;
+}

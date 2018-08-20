@@ -1,0 +1,112 @@
+
+.index-footer-box{
+    width: 100%;
+    min-width: 1200px;
+    height: 325px;
+    background: #2e2f33;
+}
+.index-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    border-bottom: 1px solid #58595c;
+}
+.index-footer .contact{
+    float: left;
+    width: 270px;
+    height: 145px;
+    padding: 0 85px 0 55px;
+    border-right: 1px solid #58595c;
+    overflow: hidden;
+}
+.index-footer .contact .icon{
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../../images/b_icon.png) no-repeat -115px -50px;
+}
+.index-footer .contact .text{
+    float: left;
+    margin-left: 10px;
+}
+.index-footer-box .fs-13{
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+.index-footer-box .fs-14{
+    font-size: 14px;
+    color: #9f9fa1;
+    line-height: 3;
+}
+.index-footer-box .fs-15{
+    font-size: 14px;
+    color: #9f9fa1;
+    line-height: 3;
+    text-align: right;
+}
+.index-footer-box .fs-16{
+    font-size: 14px;
+    color: #9f9fa1;
+    line-height: 40px;
+    text-align: center;
+}
+.index-footer-box .fs-17{
+    font-size: 12px;
+    color: #b2b2b2;
+    line-height: 90px;
+    text-align: center;
+}
+.index-footer .about-us{
+    float: left;
+    width: 80px;
+    margin-left: 85px;
+}
+.index-footer .about-us ul li{
+    font-size: 14px;
+    color: #838485;
+}
+.index-footer .about-us ul li a{
+    font-size: 14px;
+    color: #838485;
+    display: block;
+    line-height: 3;
+}
+.index-footer .about-us ul li a:hover{
+    color: #09c084;
+}
+.index-footer .service{
+    float: left;
+    width: 340px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+.index-footer .service ul li{
+    float: left;
+    margin-right: 40px;
+}
+.index-footer .service ul li a{
+    display: block;
+    font-size: 14px;
+    color: #838485;
+    line-height: 3;
+}
+.index-footer .service ul li a:hover{
+    color: #09c084;
+}
+.index-footer .atten-us{
+    float: right;
+    width: 147px;
+}
+.index-footer .figure{
+    width: 115px;
+    height: 115px;
+    padding: 15px;
+    border: 1px solid #979799;
+    border-radius: 5px;
+}
+.index-footer .figure img{
+    display: block;
+    width: 115px;
+    height: 115px;
+}

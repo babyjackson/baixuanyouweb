@@ -1,0 +1,285 @@
+
+.h-160{
+    height:160px;
+}
+.h-45{
+    height: 45px;
+}
+.h-50{
+    height: 50px;
+}
+.h-55{
+    height: 55px;
+}
+.h-30{
+    height: 30px;
+}
+.h-20{
+    height: 20px;
+}
+.h-65{
+    height: 65px;
+}
+.h-15{
+    height: 15px;
+}
+.h-25{
+    height: 25px;
+}
+.bai-login-box{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 645px;
+    background: url(../images/login_bg.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+.bai-login-box .head-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    min-width: 1200px;
+    background: rgba(23, 26, 41, 0.8);
+}
+.bai-login-box .head{
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+}
+.bai-login-box .head .logo{
+    float: left;
+    width: 105px;
+    height: 55px;
+}
+.bai-login-box .head .logo img{
+    display: block;
+    width: 105px;
+    height: 55px;
+}
+.bai-login-box .head .back_go_home{
+    display: block;
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 55px;
+}
+
+.bai-login{
+    width: 890px;
+    height: 430px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.bai-login .figure-login{
+    float: left;
+    width: 445px;
+    height: 430px;
+}
+.bai-login .figure-login img{
+    display: block;
+    width: 445px;
+    height: 430px;
+}
+.regist-login{
+    float: left;
+    width: 315px;
+    padding: 0 65px;
+}
+.regist-login .tit{
+    font-size: 30px;
+    color: #838383;
+    text-align: center;
+    line-height: 1;
+}
+.regist-login .section{
+    width: 308px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    overflow: hidden;
+}
+.regist-login .section input{
+    display: block;
+    width: 308px;
+    height: 48px;
+    font-size: 14px;
+    color: #909090;
+    border-radius: 5;
+    outline: 0;
+    border: 0;
+    text-indent: 25px;
+}
+.forget{
+    font-size: 14px;
+    line-height: 20px;
+    color: #6c6c6c;
+}
+.forget .rember{
+    float: left;
+}
+.forget .rember .remb-psd{
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.forget .rember .remb-psd input{
+    opacity: 0;
+}
+.forget-psd-a{
+    float: right;
+    font-size: 14px;
+    color: #00b38a;
+    line-height: 20px;
+}
+.btn-login{
+    display: block;
+    width: 310px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: #09c084;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+
+.bottom-reg{
+    text-align: right;
+    font-size: 14px;
+    color: #727272;
+    line-height: 1;
+}
+.bottom-reg a{
+    color: #00b38a;
+}
+.btn-login:hover{
+    opacity: 0.9;
+}
+.regist-login .section.code{
+    border: 0;
+}
+.regist-login .section.code input{
+    display: block;
+    float: left;
+    width: 184px;
+    height: 46px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.regist-login .section.code .get-btn-veri{
+    display: block;
+    float: right;
+    width: 105px;
+    height: 46px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #00b38a;
+    text-align: center;
+    line-height: 46px;
+    outline: 0;
+}
+.regist-login .agree{
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 20px;
+    margin: 10px 0;
+}
+.regist-login .agree-check{
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.regist-login .agree-check input{
+    opacity: 0;
+}
+.regist-login .agree a{
+    color: #00b38a;
+}
+.btn-register{
+    display: block;
+    width: 310px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: #09c084;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+.btn-register:hover{
+    opacity: 0.9;
+}
+
+.btn-find-psd{
+    display: block;
+    width: 310px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: #09c084;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+.btn-find-psd:hover{
+    opacity: 0.9;
+}
+
+.psd-find-success .icon{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+.psd-find-success .icon img{
+    display: block;
+    width: 85px;
+    height: 85px;
+}
+.psd-find-success .tips-text{
+    font-size: 18px;
+    color: #909090;
+    text-align: center;
+}
+.btn-find-success{
+    display: block;
+    width: 310px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    background: #09c084;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+.btn-find-success:hover{
+    opacity: 0.9;
+}

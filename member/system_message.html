@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统消息</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../layui-v2.3.0/css/layui.css">
+    <link rel="stylesheet" href="../css/common/member_head.css">
+    <link rel="stylesheet" href="../css/common/member_nav.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div class="member-con-box clearfix">
+        <!-- 左侧导航 -->
+
+        <div class="member-con-right system-message">
+            <div class="title">
+                系统消息
+            </div>
+            <ul class="message-list" id="system-message-list">
+                <li>
+                    <div class="icon">
+                        <i></i>
+                    </div>
+                    <div class="text">
+                        <div class="tips">
+                            <span class="tit">系统消息</span>
+                            <span class="time">2018-05-14 19:26:23</span>
+                        </div>
+                        <div class="t-text">您订购的虚拟主机订单已提交，稍后客服会与您联系</div>
+                    </div>
+                </li>
+            </ul>
+            <div id="fen-page"></div>
+        </div>
+    </div>
+    <div class="bg-master master-detail" style="display: none">
+        <div class="message-detail">
+            <div class="title">系统消息</div>
+            <div class="con-detail">
+                <p>1、预约商品多规格</p>
+            </div>
+            <div class="btn">
+                <a href="javascript:;" class="close">关闭</a>
+                <a href="javascript:;" class="delete">删除</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.7.min.js"></script>
+    <script src="../js/message.js"></script>
+    <script src="../layui-v2.3.0/layui.js"></script>
+    <script>
+       
+        layui.use(['laypage', 'layer'], function () {
+            var laypage = layui.laypage
+                , layer = layui.layer;
+
+            //分页调用
+            laypage.render({
+                elem: 'fen-page'
+                , count: message.length
+                , limit: 5
+                , jump: function (obj) {
+                    //模拟渲染
+                    document.getElementById('system-message-list').innerHTML = function () {
+                        var arr = []
+                            , thisData = message.concat().splice(obj.curr * obj.limit - obj.limit, obj.limit);
+                        
+                        layui.each(thisData, function (index, item) {
+                            
+                            var color = item.status === 1 ? "yellow" : "s";
+                            arr.push(
+                                '<li>\
+                                    <div class="icon ' +color+ '">\
+                                        <i></i>\
+                                    </div>\
+                                    <div class="text">\
+                                        <div class="tips">\
+                                            <span class="tit">' + item.tips + '</span>\
+                                            <span class="time">' + item.time + '</span>\
+                                        </div>\
+                                        <div class="t-text">' + item.text + '</div>\
+                                    </div>\
+                                </li>'
+                            )
+                        });
+                        
+                        return arr.join('');
+                    }();
+                }
+            });
+        });
+        
+        function showClickLi() {
+            $(".master-detail").show(0);
+        }
+        
+        $(function(){
+            $("#system-message-list").on("click", "li", function() {
+                $(".master-detail").show(0);
+            })
+        });
+        
+        $(".master-detail .close").bind("click",function() {
+            $(".master-detail").hide(0);
+        });
+
+    </script>
+</body>
+
+</html>

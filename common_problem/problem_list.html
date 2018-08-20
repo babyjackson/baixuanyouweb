@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常见问题</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/head.css">
+    <link rel="stylesheet" href="../css/common/fixed.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/common_problem.css">
+</head>
+<body>
+
+    <div class="common-problem-head-bg common-bg-1">
+        <div class="common-problem-head clearfix">
+            <div class="text-left">常见问题</div>
+            <div class="input-right">
+                <div class="h-35"></div>
+                <div class="input">
+                    <input type="text">
+                    <a href="javascript:;" class="search">搜索</a>
+                </div>
+                <div class="hot-search">
+                    <span>热门搜索：</span>
+                    <a href="javascript:;">远程连接服务器</a>
+                    <a href="javascript:;">配置安全组</a>
+                    <a href="javascript:;">挂载数据盘</a>
+                    <a href="javascript:;">设置域名解析</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="common-problem-con">
+        <div class="common-nav">
+            <ul class="switch-nav">
+                <li class="active">
+                    全部
+                    <i></i>
+                </li>
+                <li>
+                    域名注册
+                    <i></i>
+                </li>
+                <li>
+                    虚拟主机
+                    <i></i>
+                </li>
+                <li>
+                    云服务器
+                    <i></i>
+                </li>
+                <li>
+                    其它问题
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+        <div class="common-box clearfix">
+            <div class="problem-con">
+                <!-- 1 -->
+                <div class="item-con">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="title">
+                                    <span>【推荐】</span>无法连接 Windows 实例远程桌面 - 云服务器 ECS
+                                </div>
+                                <div class="text">
+                                    Windows 服务器远程桌面无法连接时，可以通过控制台的远程连接功能登录到服务器进行排查。远程桌面无法连接可能是由于以下几种原因： Windows Server 2012初次登录开启防火墙导致 远程端口设置超出范围导致 杀毒安全软件导致 远程
+                                    ...
+                                </div>
+                                <div class="tips">
+                                    <span class="from">来自：帮助 > 域名注册</span>
+                                    <span class="time">2018-06-07</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="title">
+                                <span>【推荐】</span>无法连接 Windows 实例远程桌面 - 云服务器 ECS
+                            </div>
+                            <div class="text">
+                                Windows 服务器远程桌面无法连接时，可以通过控制台的远程连接功能登录到服务器进行排查。远程桌面无法连接可能是由于以下几种原因： Windows Server 2012初次登录开启防火墙导致 远程端口设置超出范围导致 杀毒安全软件导致 远程
+                                ...
+                            </div>
+                            <div class="tips">
+                                <span class="from">来自：帮助 > 域名注册</span>
+                                <span class="time">2018-06-07</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="load-more-a">
+                         已显示 11 个结果 加载更多
+                    </a>
+                </div>
+
+                <div class="item-con">
+                    2
+                    <!-- 2 -->
+                </div>
+                <div class="item-con">
+                    3
+                    <!-- 2 -->
+                </div>
+                <div class="item-con">
+                    4
+                    <!-- 2 -->
+                </div>
+                <div class="item-con">
+                    5
+                    <!-- 2 -->
+                </div>
+            </div>
+            <div class="maybe-atten-problem">
+                <div class="title">
+                     您可能关注的问题
+                </div>
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                             · 如何选择适合您的域名？
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                             · 如何购买域名？
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                             · 什么是白金域名？
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                             · .CN等国内域名如何提交资料审核？
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                             · 域名要备案吗，如何备案？
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                             · 从域名到网站，要做哪几步？
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-80"></div>
+        
+    </div>
+    <script src="../js/jquery-1.7.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        var switchTabLi = $(".common-nav .switch-nav li");
+        var tabCon = $(".problem-con .item-con");
+
+        changeFun(switchTabLi, 0, tabCon);
+
+        switchTabLi.click(function(){
+            var $index = $(this).index();
+            changeFun(switchTabLi, $index, tabCon);
+        })
+
+        function changeFun(switchTabLi, index, tabCon) {
+            switchTabLi.eq(index).addClass("active").siblings().removeClass("active");
+            tabCon.stop().hide(0);
+            tabCon.eq(index).stop().show(0);
+        }
+    </script>
+</body>
+</html>

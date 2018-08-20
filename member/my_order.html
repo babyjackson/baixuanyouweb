@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/member_head.css">
+    <link rel="stylesheet" href="../css/common/member_nav.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="member-con-box clearfix">
+        <!-- 左边导航 -->
+    
+        <div class="member-con-right my-order">
+            <div class="title-change">我的订单</div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>订单编号</th>
+                        <th>产品名称</th>
+                        <th>时长</th>
+                        <th>购买量</th>
+                        <th>价格</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="input-check-box check">
+                                
+                            </i>
+                        </td>
+                        <td>1354846535488415</td>
+                        <td>通用型G5</td>
+                        <td>1年</td>
+                        <td>1</td>
+                        <td>¥<span>168.00</span></td>
+                        <td>
+                            <a href="javascript:;" class="look-over">详情<i class="line"></i></a>
+                            <a href="javascript:;" class="delete-a">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="input-check-box check">
+                    
+                            </i>
+                        </td>
+                        <td>1354846535488415</td>
+                        <td>通用型G5</td>
+                        <td>1年</td>
+                        <td>1</td>
+                        <td>¥
+                            <span>168.00</span>
+                        </td>
+                        <td>
+                            <a href="javascript:;" class="look-over">详情
+                                <i class="line"></i>
+                            </a>
+                            <a href="javascript:;" class="delete-a">删除</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="tab-bot">
+                    <div class="batch">
+                        <div class="input">
+                            <i class="all-choose check"></i>全选
+                        </div>
+                        <a href="javascript:;" class="batch-delete">批量删除</a>
+                    </div>
+                    <div class="order-fenye">
+                        <a href="javascript:;" class="pre-page"></a>
+                        <a href="javascript:;" class="cur">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;" class="next-page"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="../js/jquery-1.7.min.js"></script>
+    <script>
+        $(".input-check-box").click(function() {
+            var arrTrue = [];
+            $(this).toggleClass("check");
+            var lengthInput = $(".input-check-box").length;
+            $(".input-check-box").each(function (index, item) {
+                if ($(".input-check-box").eq(index).hasClass("check")) {
+                    arrTrue.push(1);
+                }
+            });
+            if (arrTrue.length === lengthInput){
+                $(".all-choose").addClass("check");
+            }else{
+                $(".all-choose").removeClass("check");
+            }
+        });
+        $(".all-choose").click(function() {
+            $(this).toggleClass("check");
+            if($(".all-choose").hasClass("check")){
+                $(".input-check-box").addClass("check");
+            }else{
+                $(".input-check-box").removeClass("check");
+            }
+        });
+    </script>
+</body>
+</html>

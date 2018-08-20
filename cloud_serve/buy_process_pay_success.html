@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付成功</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/head.css">
+    <link rel="stylesheet" href="../css/common/fixed.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/cloud_serve.css">
+</head>
+
+<body>
+    <div class="buy-process-box">
+        <div class="bread-nav">
+            <a href="javascript:;">百轩优首页</a>>
+            <a href="javascript:;">云服务器</a>>
+            <a href="javascript:;">确认订单</a>>
+            <a href="javascript:;">支付</a>
+        </div>
+        <div class="buy-process">
+            <div class="buy-process-map">
+                <div class="map-bg map-bg-3"></div>
+                <span class="a">确认订单</span>
+                <span class="b">支付</span>
+                <span class="c">支付成功</span>
+            </div>
+            <div class="buy-process-con">
+                <div class="buy-left">
+                    <img src="../images/buy_process_pay_success_left.jpg" alt>
+                </div>
+                <div class="buy-right">
+                    <div class="title">
+                        <div class="icon">
+                            <img src="../images/right.png" alt>
+                        </div>
+                        确认订单成功，现在就去付款吧~
+                    </div>
+                    <div class="fs-98">
+                        <span>
+                            订单号：
+                            <i>201807166894554</i>
+                        </span>
+                    </div>
+                    <div class="fs-98">
+                         现在您可以: <a href="javascript:;"><i>已完成订单列表</i></a> | <a href="javascript:;">订单详情</a> | <a href="javascript:;">继续逛逛</a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-60"></div>
+        </div>
+    </div>
+
+    <!-- 右侧固定 -->
+    
+    <script src="../js/jquery-1.7.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(".pay-way-name .item").click(function () {
+            $(this).addClass("checked").siblings().removeClass("checked");
+        })
+    </script>
+</body>
+
+</html>

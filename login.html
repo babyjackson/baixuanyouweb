@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/common/reset.css">
+    <link rel="stylesheet" href="css/common/footer.css">
+    <link rel="stylesheet" href="css/common/fixed.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="bai-login-box">
+        <div class="head-box">
+            <div class="head">
+                <div class="logo">
+                    <img src="images/logo_bar.png" alt>
+                </div>
+                <a href="index.html" class="back_go_home">返回首页</a>
+            </div>
+        </div>
+        <div class="h-160"></div>
+        <div class="bai-login clearfix">
+            <div class="figure-login">
+                <img src="images/regis_login_img.jpg" alt>
+            </div>
+            <div class="regist-login">
+                <form id="login-form">
+                    <div class="h-45"></div>
+                    <div class="tit">登录</div>
+                    <div class="h-30"></div>
+                    <div class="section">
+                        <input type="text" placeholder="输入手机号/用户名" name="username">
+                    </div>
+                    <div class="h-20"></div>
+                    <div class="section">
+                        <input type="password" placeholder="请输入密码" name="psd">
+                    </div>
+                    <div class="h-20"></div>
+                    <div class="forget clearfix">
+                        <div class="rember">
+                            <span class="remb-psd">
+                                <input type="checkbox">
+                            </span>
+                            记住密码
+                        </div>
+                        <a href="javascript:;" class="forget-psd-a">忘记密码</a>
+                    </div>
+                    <div class="h-15"></div>
+                    <a href="javascript:;" class="btn-login">登录</a>
+                    <div class="h-30"></div>
+                    <div class="bottom-reg">
+                         还没有账号？<a href="javascript:;">立即注册</a>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(".btn-login").click(function() {
+            login();
+        });
+        var login = function () {
+            var loginForm = document.getElementById("login-form"),
+                username = loginForm.username.value,
+                psd = loginForm.psd.value,
+                warn = "";
+            if (username == "") {
+                
+                warn = "用户名不能为空";
+                console.log(warn);
+                return;
+            }
+            if (psd == "") {
+                warn = "登录密码不能为空";
+                console.log(warn);
+                return;
+            }
+            if (username != "" && psd != "") {
+                $.ajax({
+                    type: "post",
+                    url: "",
+                    dataType: "json",
+                    data: { username: username, psd: psd },
+                    async: true,
+                    success: function (data) {
+
+                    }
+                })
+            }
+        }
+    </script>
+</body>
+</html>

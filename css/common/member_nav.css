@@ -1,0 +1,64 @@
+.member-nav-left{
+    float: left;
+    width: 200px;
+    background: #ffffff;
+    height: 560px;
+}
+.member-nav-left ul.nav{
+    background: #ffffff;
+    width: 200px;
+}
+.member-nav-left ul.nav>li p{
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: #3f3f3f;
+    line-height: 50px;
+    padding-top: 10px;
+}
+.member-nav-left ul.nav>li>p>i{
+    display: block;
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 15px 15px 0 20px;
+    background-image: url(../../images/member_icon.png);
+    background-repeat: no-repeat;
+}
+.member-nav-left ul.nav>li>p>i.a{
+    background-position: -122px -11px;
+}
+.member-nav-left ul.nav>li>p>i.b{
+    background-position: -183px -11px;
+}
+.member-nav-left ul.nav>li>p>i.c{
+    background-position: -244px -11px;
+}
+.member-nav-left ul.nav>li .down{
+    width: 200px;
+}
+.member-nav-left ul.nav>li .down li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 60px;
+    font-size: 14px;
+    color: #838383;
+    background: #fff;
+}
+.member-nav-left ul.nav>li .down li a.active{
+    background: #f6f6f6;
+}
+.member-nav-left .sign-out{
+    display: block;
+    width: 145px;
+    height: 45px;
+    border-radius: 30px;
+    margin: 60px auto 0;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    color: #898989;
+}

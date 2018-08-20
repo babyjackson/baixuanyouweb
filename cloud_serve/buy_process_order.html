@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品中心</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/head.css">
+    <link rel="stylesheet" href="../css/common/fixed.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/cloud_serve.css">
+</head>
+<body>
+    <div class="buy-process-box">
+        <div class="bread-nav">
+            <a href="javascript:;">百轩优首页</a>>
+            <a href="javascript:;">云服务器</a>>
+            <a href="javascript:;">云服务器配置</a>
+        </div>
+        <div class="order-detail">
+            <div class="order-1">
+                <ul class="clearfix">
+                    <li>
+                        <span>CPU内存比：</span>1:4
+                    </li>
+                    <li>
+                        <span>最大内网带宽：</span>20Gbps
+                    </li>
+                    <li>
+                        <span>CPU类型：</span>Skylake Xeon Platinum 8163 2.5GHz
+                    </li>
+                    <li>
+                        <span>最大网络收发包能力：</span>400万PPS
+                    </li>
+                </ul>
+            </div>
+            <div class="line-x"></div>
+            <div class="order-2">
+                <p class="clearfix">
+                    <span class="lab">地域：</span>
+                    <i>水机分配</i>
+                </p>
+                <p class="clearfix">
+                    <span class="lab">CPU内存：</span>
+                     2核 8gb
+                </p>
+                <p class="clearfix">
+                    <span class="lab">年限：</span>
+                    <i>1年</i>
+                </p>
+            </div>
+            <div class="line-x"></div>
+            <div class="order-3 clearfix">
+                <div class="lab">场景</div>
+                <ul>
+                    <li>·高网络包收发场景，如视频弹幕、电信业务转发等</li>
+                    <li>·各种类型和规模的企业级应用</li>
+                    <li>·中小型数据库系统、缓存、搜索集群、数据分析和计算</li>
+                    <li>·计算集群、依赖内存的数据处理</li>
+                </ul>
+            </div>
+            <div class="line-x"></div>
+            <div class="buy-num">
+                <div class="lab">购买量：</div>
+                <div class="input">
+                    <input type="text" value="1" class="num-value" id="numValue">
+                    <span class="tai">台</span>
+                    <div class="num">
+                        <span class="plus"><i></i></span>
+                        <span class="minus"><i></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="h-40"></div>
+        <div class="buy-box-bottom">
+            <div class="buy-bottom">
+                <div class="price">配置费：<span><i>¥</i>812.94</span></div>
+                <a href="javascript:;" class="now-buy">立即购买</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- 右侧固定 -->
+    
+    <script src="../js/jquery-1.7.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        
+        $(".buy-num .plus").click(function(){
+            plus($("#numValue"));
+        });
+        $(".buy-num .minus").click(function () {
+                minus($("#numValue"));
+        });
+        function plus($id) {
+           var value = parseInt($id.val());
+           if(value == ""){
+               value = 1;
+           }
+           value ++;
+          $id.val(value);
+        }
+        function minus($id) {
+            var value = parseInt($id.val());
+            if (value > 1) {
+                value --;
+            }else {
+                value = 1;
+            }
+            $id.val(value);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热文云集</title>
+    <link rel="stylesheet" href="layui-v2.3.0/css/layui.css">
+    <link rel="stylesheet" href="css/common/reset.css">
+    <link rel="stylesheet" href="css/common/head.css">
+    <link rel="stylesheet" href="css/common/fixed.css">
+    <link rel="stylesheet" href="css/common/footer.css">
+    <link rel="stylesheet" href="css/hot_text.css">
+</head>
+<body class="hot-text-body">
+    <!-- head start -->
+    <!-- head end -->
+    <div class="hot-text-ban">
+        <div class="h-115"></div>
+        <div class="fs-34">热文云集</div>
+        <div class="fs-35">为您提供优质的新闻和专业的服务</div>
+    </div>
+    
+    <div class="hot-text-list-box">
+        <ul class="hot-list" id="hot-text-list">
+            <li>
+                <div class="hot-figure">
+                    <img src="images/hot_text_list_img_1.jpg" alt>
+                </div>
+                <div class="hot-text">
+                    <a class="title" href="javascript:;">小游戏正研发跳转、即时语音功能/微信集中处理5万余个账号/支付宝怼微信</a>
+                    <div class="text">
+                         日前，Jisu App发布了一份关于微信小程序的数据报告（数据截止至2017年12月），报告从用户花费在小程序的时长、消费、用户的性别等方面进行了总结。并总结出了以下几个亮点...
+                    </div>
+                    <div class="clearfix">
+                        <div class="time">
+                            <i class="icon"></i>
+                             2018-07-17 23:56:03
+                        </div>
+                        <a href="javascript:;" class="hot-see-detail">查看详情</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="fen-page"></div>
+    </div>
+    <!-- 右侧固定 -->
+    
+    <!-- footer start -->
+    <!-- footer end -->
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- mock数据 -->
+    <script src="js/hot_text_json.js"></script>
+    <script src="layui-v2.3.0/layui.js"></script>
+    <script>
+        layui.use(['laypage', 'layer'], function(){
+            var laypage = layui.laypage
+                , layer = layui.layer;
+
+                //分页调用
+                laypage.render({
+                elem: 'fen-page'
+                , count: hotTextJson.length
+                ,limit: 8
+                , jump: function (obj) {
+                    //模拟渲染
+                    document.getElementById('hot-text-list').innerHTML = function () {
+                        var arr = []
+                            , thisData = hotTextJson.concat().splice(obj.curr * obj.limit - obj.limit, obj.limit);
+                            console.log(thisData)
+                        layui.each(thisData, function (index, item) {
+                            console.log(item);
+                            console.log(index)
+                            arr.push(
+                                '<li>\
+                                    <div class="hot-figure">\
+                                        <img src="' + item.images + '" alt>\
+                                    </div>\
+                                    <div class="hot-text">\
+                                        <a class="title" href="javascript:;">'+ item.title +'</a>\
+                                        <div class="text">' + item.text + '</div>\
+                                        <div class="clearfix">\
+                                            <div class="time">\
+                                                <i class="icon"></i>' + item.time + '\
+                                            </div>\
+                                            <a href="javascript:;" class="hot-see-detail">查看详情</a>\
+                                         </div>\
+                                    </div>\
+                                </li >'
+                            );
+                        });
+                        return arr.join('');
+                    }();
+                }
+            });
+        })
+    </script>
+</body>
+</html>

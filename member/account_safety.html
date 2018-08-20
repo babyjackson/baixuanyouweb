@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账号安全</title>
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/member_head.css">
+    <link rel="stylesheet" href="../css/common/member_nav.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="member-con-box clearfix">
+        <!-- 左边导航 -->
+
+        <div class="member-con-right account-safe">
+            <div class="title-account">账号安全</div>
+            <div class="account-con">
+                <div class="account-item">
+                    <div class="icon">
+                        <i></i>
+                    </div>
+                    <div class="tit">登录密码</div>
+                    <div class="text">
+                         安全性高的密码可以使帐号更安全。建议您定期更换密码，建议您设置一个包含字母、符号或数字中至少两项且长度超过6位的密码。
+                    </div>
+                    <a href="javascript:;" class="link">修改</a>
+                </div>
+                <div class="account-item">
+                    <div class="icon">
+                        <i></i>
+                    </div>
+                    <div class="tit">手机绑定</div>
+                    <div class="text-1">
+                         您已绑定了手机<span>150****0661</span>
+                    </div>
+                    <a href="javascript:;" class="link">修改</a>
+                </div>
+                <div class="account-item">
+                    <div class="icon warning">
+                        <i></i>
+                    </div>
+                    <div class="tit">邮箱绑定</div>
+                    <div class="text-1">
+                         您尚未绑定邮箱，为增加账户安全，请立即绑定
+                    </div>
+                    <a href="javascript:;" class="link">修改</a>
+                </div>
+                <div class="account-item">
+                    <div class="icon warning">
+                        <i></i>
+                    </div>
+                    <div class="tit">注销账号</div>
+                    <div class="text">
+                         如果您不再使用此账号，可以将其注销。账号成功注销后，其下所有服务、数据及隐私信息将会被删除并将无法恢复。
+                    </div>
+                    <a href="javascript:;" class="click-zx">注销账户</a>
+                </div>
+            </div>
+            <div class="h-170"></div>
+        </div>
+    </div>
+    <div class="bg-master" style="display: none">
+        <div class="account-cancel" style="display: none">
+            <div class="title">
+                注销账户
+            </div>
+            <div class="cancel-con">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="fs-90">
+                         您确定要注销该账号吗？
+                    </div>
+                    <div class="fs-91">
+                         注销后不可恢复，需重新注册
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="javascript:;" class="cancel">取消</a>
+                <a href="javascript:;" class="sure">确定</a>
+            </div>
+        </div>
+        <div class="cancel-success" style="display: none">
+            <div class="icon"></div>
+            <div class="text">注销成功</div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-1.7.min.js"></script>
+    <script>
+        
+        $(".click-zx").click(function(){
+            show();
+            $(".account-cancel").show(0);
+        });
+
+        $(".account-cancel .sure").click(function(){
+            show();
+            $(".account-cancel").hide(0);
+            $(".cancel-success").show(0);
+            setTimeout(function(){
+                hide();
+                $(".cancel-success").hide(0);
+            }, 1000)
+        });
+
+        $(".account-cancel .cancel").click(function(){
+            hide();
+            $(".account-cancel").hide(0);
+        });
+
+        function show(){
+            $(".bg-master").show(0);
+        }
+        function hide() {
+            $(".bg-master").hide(0);
+        }
+    </script>
+</body>
+
+</html>
